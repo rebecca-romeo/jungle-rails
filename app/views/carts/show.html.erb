@@ -47,9 +47,9 @@
 
   <% else %>
 
-    <div class="empty-cart-alert">
-      <p>Your cart is empty.</p>
-      <%= link_to "Visit the shop to buy some plants", root_path %>
+    <div>
+      <p class="empty-cart-alert">Your cart is empty.</p>
+      <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
     </div>
 
   <% end %>
