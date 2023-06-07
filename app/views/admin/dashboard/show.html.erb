@@ -1,2 +1,15 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1 class="store-stats-title">Admin Dashboard</h1>
+
+<div class="d-grid gap-2">
+  <%= link_to admin_products_path do %>
+    <button type="button" class="btn btn-primary btn-lg">
+      <span class='product-count-span'>Product count:</span> <span class="badge text-bg-secondary"><%= @product_count %></span>
+    </button>
+  <% end %>
+
+  <%= link_to root_path do %>
+    <button type="button" class="btn btn-primary btn-lg">
+      Category count: <span class="badge text-bg-secondary"><%= @category_count %></span>
+    </button>
+  <% end %>
+</div>
